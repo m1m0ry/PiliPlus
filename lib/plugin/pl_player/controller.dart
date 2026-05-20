@@ -1255,7 +1255,7 @@ class PlPlayerController with BlockConfigMixin {
   Timer? volumeTimer;
   bool volumeInterceptEventStream = false;
 
-  static final double maxVolume = PlatformUtils.isDesktop ? 2.0 : 1.0;
+  static final double maxVolume = PlatformUtils.isDesktop ? 1.0 : 1.0;
   Future<void> setVolume(double volume, {bool showIndicator = true}) async {
     if (this.volume.value != volume) {
       this.volume.value = volume;
